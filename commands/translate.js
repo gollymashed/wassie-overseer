@@ -11,6 +11,6 @@ module.exports = {
         const translation = await axios.post('https://translatooooor.up.railway.app/api/translate/translate', {
             request: interaction.targetMessage.content
         })
-        await interaction.reply(`dis translaits to: ${translation.data.translation}`);
+        await interaction.reply(`dis translaits to: "${translation.data.translation}"`);
     },
 };
